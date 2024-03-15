@@ -24,7 +24,6 @@
             /* Deskop 3 */
             justify-content: center;
             align-items: center;
-            flex-direction: column-reverse;
 
             /* Deskop 4 */
             /* justify-content: flex-end;
@@ -96,9 +95,9 @@
             /* flex-direction: column; */
 
             /* Deskop 3 */
-            /* flex-direction: row-reverse; */
-            align-items: center;
-            /* order: 1;
+            flex-direction: row-reverse;
+            /* align-items: center; */
+            order: -1
 
 
             /* Deskop 4 */
@@ -109,7 +108,7 @@
             /* flex-direction: row-reverse;
             align-items: end; */
             /* flex-wrap: wrap-reverse; */
-
+            
 
             /* Destop 6 */
             /* flex-direction: column-reverse;
@@ -127,14 +126,6 @@
 
         }
 
-        .circle:nth-child(1) {
-            order: 1;
-        }
-
-        .circle:nth-child(2) {
-            order: 3;
-        }
-
         .circle:nth-child(3) {
             display: flex;
             height: 200px;
@@ -142,8 +133,7 @@
             border-radius: 100%;
             background-color: rgb(255, 47, 47);
             margin: 10px;
-            order: 2;
-
+            order: 1;
         }
     </style>
 </head>
@@ -152,8 +142,8 @@
     <div class="section">
         <div class="container">
             <div class="circle"></div>
-            <div class="circle">box 2</div>
-            <div class="circle">box 3</div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
     </div>
 </body>
